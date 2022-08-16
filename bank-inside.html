@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank-inside</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl mt-5 text-center font-black">Les's get some <span
+                class="text-fuchsia-900">moooooooney</span>
+            !!!
+        </h1>
+    </header>
+    <main>
+        <section class=" mt-12">
+            <div class="grid grid-cols-3 w-7/12 text-white mx-auto gap-4">
+                <div class="bg-green-400 p-8 rounded-md">
+                    <h1 class="text-3xl font-semibold">Deposit</h1>
+                    <h1 class="text-6xl font-bold">$<span id="update-deposit">00</span></h1>
+                </div>
+                <div class="bg-yellow-400 p-8 rounded-md">
+                    <h1 class="text-3xl font-semibold">Withdrow</h1>
+                    <h1 class="text-6xl font-bold">$<span id="update-withdrow">00</span></h1>
+                </div>
+                <div class="bg-purple-400 p-8 rounded-md">
+                    <h1 class="text-3xl font-semibold">Balance</h1>
+                    <h1 class="text-6xl font-bold">$<span id="balance">1240</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class=" mt-12">
+            <div class="grid grid-cols-2 w-7/12  mx-auto gap-4">
+                <div class="bg-purple-500 p-8 rounded-md">
+                    <h1 class="text-3xl font-semibold text-white">Please Deposit</h1>
+                    <input class="block w-9/12 py-1 my-3 pl-2" type="number" name="deposit" id="deposit-fild"
+                        placeholder="$ Enter Your Deposit Amount">
+                    <button class="bg-red-200 text-white font-bold rounded-full hover:bg-sky-200 px-7 py-1"
+                        id="deposit-btn">Deposit</button>
+                </div>
+                <div class="bg-fuchsia-500 p-8 rounded-md">
+                    <h1 class="text-3xl font-semibold text-white">Please Withdrow</h1>
+                    <input class="block w-9/12 py-1 my-3 pl-2" type="number" name="withdrow" id="withdrow-fild"
+                        placeholder="$ Enter Your Deposit Amount">
+                    <button class="bg-red-200 text-white font-bold rounded-full hover:bg-sky-200 px-5 py-1"
+                        id="withdrow-btn">Withdrow</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="bankInside.js"></script>
+</body>
+
+</html>
